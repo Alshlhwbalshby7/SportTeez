@@ -129,3 +129,8 @@ if (isset($_SESSION['username'])) {
             border-radius: 5px;
             object-fit: contain;
         }
+         .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
