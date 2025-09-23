@@ -97,3 +97,11 @@ if (isset($_SESSION['username'])) {
             border-radius: 5px;
             font-size: 17px;
         }
+         button {
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
