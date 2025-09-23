@@ -141,3 +141,7 @@ if (isset($_SESSION['username'])) {
             background-color: #007bff;
             margin-right: 25px;
         }
+         a {
+            text-decoration: none;
+            color: #007bff;
+        }
