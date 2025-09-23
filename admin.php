@@ -83,3 +83,8 @@ if (isset($_SESSION['username'])) {
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
+           label {
+            display: block;
+            font-weight: bold;
+           margin: 10px 0 5px;
+        }
