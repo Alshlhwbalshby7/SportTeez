@@ -137,3 +137,7 @@ if (isset($_SESSION['username'])) {
            .delete-btn {background-color: #dc3545;
             margin-left: 20px;
         }
+          .edit-btn {
+            background-color: #007bff;
+            margin-right: 25px;
+        }
