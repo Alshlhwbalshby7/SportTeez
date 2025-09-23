@@ -43,3 +43,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 }
+
+// استرجاع المنتجات
+$sql = "SELECT id, name, description, price, image FROM products";
+$result = $conn->query($sql);
+
+$conn->close();
+?>
+
+<?php
+if (isset($_SESSION['username'])) {
+    echo "<div class='auth-buttons'>";
+    echo "<span class='welcome-text'>مرحبًا، " . $_SESSION['username'] . "!</span>";
+    echo "<a href='logout.php' class='btn logout-btn'>تسجيل الخروج</a>";
+    echo "</div>";
+} else {
+    echo "<div class='auth-buttons'>";
+    echo "<a href='login.php' class='btn login-btn'>تسجيل الدخول</a>";
+    echo "</div>";
+}
+?>
