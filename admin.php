@@ -155,3 +155,8 @@ if (isset($_SESSION['username'])) {
             gap: 15px;
             margin-top: 20px;
         }
+          .welcome-text {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
