@@ -65,3 +65,8 @@ if (isset($_SESSION['username'])) {
 ?>
 <!DOCTYPE html>
 <html lang="ar">
+    <head>
+    <meta charset="UTF-8">
+    <title>إدارة المنتجات</title>
+    <style>
+ 
