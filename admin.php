@@ -148,3 +148,10 @@ if (isset($_SESSION['username'])) {
         a:hover {
             text-decoration: underline;
         }
+         .auth-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
