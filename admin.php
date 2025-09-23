@@ -123,3 +123,9 @@ if (isset($_SESSION['username'])) {
             border-radius: 10px;
             text-align: center;
         }
+          .product img {
+            max-width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            object-fit: contain;
+        }
