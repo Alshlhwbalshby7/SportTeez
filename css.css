@@ -1,0 +1,254 @@
+ #body_cart{
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #333;
+}
+.message {
+    color: green;
+    margin-bottom: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.remove-btn {
+    background: red;
+    color: white;
+}
+.clear-btn {
+    background: darkred;
+    color: white;
+    margin-top: 10px;
+}
+.back-btn {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+#body_index {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.user-info {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out; /* إضافة انتقال لتحريك الصورة */
+}
+
+.product:hover {
+    transform: translateY(-10px); * رفع المنتج قليلاً عند المرور عليه *//
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* إضافة تأثير على الصورة */
+}
+
+.product img:hover {
+    transform: scale(1.1); /* تكبير الصورة عند النقر عليها */
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.lout{
+    background: linear-gradient(to right, #ff4d4d, #cc0000);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+#aa {
+     
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(81, 0, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#aa:hover{background-color: rgb(255, 179, 0);}
+
+
+
+
+ 
+
+#body_login {
+         
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+   
+    }
+     
+
+
+        #h1l {
+           
+            color: #020000;
+            font-size: 30px;
+        }
+        
+      
+        .al {
+            background: white;
+            width: 300px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+   
+        #la {
+            display: block;
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        #pu[type="text"],
+        #pu[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+
+        }
+        
+ 
+        #bo{
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        #bo:hover {
+            background-color: #218838;
+        }
+         
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+             
+        }
+   
+
+
+
+
+
+
+
+
+
+
+
+        
