@@ -115,3 +115,11 @@ if (isset($_SESSION['username'])) {
             gap: 15px;
             padding: 20px;
         }
+           .product {
+            background: white;
+            padding: 15px;
+            width: 220px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
