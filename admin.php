@@ -63,3 +63,5 @@ if (isset($_SESSION['username'])) {
     echo "</div>";
 }
 ?>
+<!DOCTYPE html>
+<html lang="ar">
