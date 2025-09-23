@@ -105,3 +105,13 @@ if (isset($_SESSION['username'])) {
             font-size: 16px;
             border-radius: 5px;
         }
+          button:hover {
+            opacity: 0.8;
+        }
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
