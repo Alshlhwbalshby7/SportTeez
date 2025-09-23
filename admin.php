@@ -134,3 +134,6 @@ if (isset($_SESSION['username'])) {
             justify-content: space-between;
             margin-top: 10px;
         }
+           .delete-btn {background-color: #dc3545;
+            margin-left: 20px;
+        }
