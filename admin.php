@@ -145,3 +145,6 @@ if (isset($_SESSION['username'])) {
             text-decoration: none;
             color: #007bff;
         }
+        a:hover {
+            text-decoration: underline;
+        }
