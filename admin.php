@@ -69,4 +69,10 @@ if (isset($_SESSION['username'])) {
     <meta charset="UTF-8">
     <title>إدارة المنتجات</title>
     <style>
+        
+            body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(115, 237, 168);
+            text-align: center;
+        }
  
