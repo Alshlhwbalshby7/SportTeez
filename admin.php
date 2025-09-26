@@ -246,3 +246,4 @@ if (isset($_SESSION['username'])) {
     <button type="submit" style="background-color:rgb(211, 54, 23);">إضافة المنتج</button>
 </form>
 <h1 class="mon">المنتجات المضافة</h1>
+<div class="products-container">
