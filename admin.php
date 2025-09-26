@@ -200,3 +200,14 @@ if (isset($_SESSION['username'])) {
             margin-bottom: 20px;
             display: inline-block;
         }
+               #store-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgb(15, 18, 1);
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
