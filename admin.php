@@ -231,3 +231,4 @@ if (isset($_SESSION['username'])) {
               </style>
 </head>
 <body>
+    <h1 class="header"> مرحبا بك في صفحه التحكم </h1>
