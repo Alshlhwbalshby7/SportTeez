@@ -247,3 +247,25 @@ if (isset($_SESSION['username'])) {
 </form>
 <h1 class="mon">المنتجات المضافة</h1>
 <div class="products-container">
+     <?php
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            echo '<div class="product">';
+            echo '<h2>' . $row['name'] . '</h2>';
+            echo '<p>' . $row['description'] . '</p>';
+            echo '<p>السعر: ' . $row['price'] . ' $</p>';
+            echo '<img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="صورة المنتج">';
+            echo '<div class="buttons">';
+            echo '<a href="?delete=' . $row['id'] . '" onclick="return confirm(\'هل أنت متأكد من حذف هذا المنتج؟\')">';
+            echo '<button class="delete-btn">حذف</button>';
+            echo '</a>';
+            echo '<a href="edit.php?id=' . $row['id'] . '">';echo '<button class="edit-btn">تعديل</button>';
+            echo '</a>';
+            echo '</div>';
+            echo '</div>';
+        }
+    } else {
+        echo "<p class='no-products'>لا توجد منتجات مضافة</p>";
+    }
+    ?>
+</div>
