@@ -112,7 +112,7 @@ li {
     height: 200px;
     border-radius: 10px;
     object-fit: contain;
-    transition: transform 0.3s ease; /* إضافة تأثير على الصورة */
+    transition: transform 0.4s ease; /* إضافة تأثير على الصورة */
 }
 
 .product img:hover {
@@ -175,7 +175,7 @@ button:hover {
 
         #h1l {
            
-            color: #020000;
+            color: #030000;
             font-size: 30px;
         }
         
@@ -214,7 +214,7 @@ button:hover {
             margin-top: 15px;
             background-color: #28a745;
             border: none;
-            color: white;
+            color: rgb(253, 247, 247);
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
