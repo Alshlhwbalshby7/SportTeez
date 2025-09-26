@@ -215,3 +215,9 @@ if (isset($_SESSION['username'])) {
           #store-link:hover {
             background-color: rgb(17, 4, 102);
         }
+          .no-products {
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+            margin-top: 40px;
+        }
