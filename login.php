@@ -29,10 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
             exit();
         } else {
-            $error_message = "❌ كلمة المرور غير صحيحة.";
+            $error_message = "❌ كلمة المرور  ليست صحيحة.";
         }
     } else {
-        $error_message = "❌ اسم المستخدم غير موجود.";
+        $error_message = "❌ اسم المستخدم  ليس موجود.";
     }
 }
 ?>
