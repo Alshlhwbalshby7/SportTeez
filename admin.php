@@ -232,3 +232,16 @@ if (isset($_SESSION['username'])) {
 </head>
 <body>
     <h1 class="header"> مرحبا بك في صفحه التحكم </h1>
+    
+<form method="POST" enctype="multipart/form-data">
+    <label class="admin-title">إضافة منتج جديد</label><br>
+    <label for="name">اسم المنتج:</label>
+    <input type="text" name="name" required><br>
+    <label for="description">وصف المنتج:</label>
+    <textarea name="description" required></textarea><br>
+    <label for="price">السعر:</label>
+    <input type="number" name="price" step="0.01" required><br>
+    <label for="image">صورة المنتج:</label>
+    <input type="file" name="image" required><br>
+    <button type="submit" style="background-color:rgb(211, 54, 23);">إضافة المنتج</button>
+</form>
