@@ -175,3 +175,7 @@ if (isset($_SESSION['username'])) {
             background: linear-gradient(to right, #4CAF50, #008CBA);
             color: white;
         }
+         .logout-btn {
+            background: linear-gradient(to right, #ff4d4d, #cc0000);
+            color: white;
+        }
