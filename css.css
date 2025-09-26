@@ -110,7 +110,7 @@ li {
 .product img {
     width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 9px;
     object-fit: contain;
     transition: transform 0.4s ease; /* إضافة تأثير على الصورة */
 }
