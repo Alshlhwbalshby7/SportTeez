@@ -134,3 +134,142 @@ if (isset($_SESSION['username'])) {
             justify-content: space-between;
             margin-top: 10px;
         }
+           .delete-btn {background-color: #dc3545;
+            margin-left: 20px;
+        }
+          .edit-btn {
+            background-color: #007bff;
+            margin-right: 25px;
+        }
+         a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+         .auth-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+          .welcome-text {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+         .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            text-align: center;
+            display: inline-block;
+        }
+          .login-btn {
+            background: linear-gradient(to right, #4CAF50, #008CBA);
+            color: white;
+        }
+         .logout-btn {
+            background: linear-gradient(to right, #ff4d4d, #cc0000);
+            color: white;
+        }
+         .btn:hover {
+            opacity: 0.8;
+        }
+         .admin-title {
+            background: linear-gradient(to right, #ff5733, #ffbd33);
+            color: white;
+            padding: 15px;
+            font-size: 26px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+         .header {
+            background: linear-gradient(to right, #4CAF50, #008CBA);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+               #store-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: rgb(15, 18, 1);
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+          #store-link:hover {
+            background-color: rgb(17, 4, 102);
+        }
+          .no-products {
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+            .mon{background: linear-gradient(to right, #ff5733, #ffbd33);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: inline-block;}
+              </style>
+</head>
+<body>
+    <h1 class="header"> مرحبا بك في صفحه التحكم </h1>
+    
+<form method="POST" enctype="multipart/form-data">
+    <label class="admin-title">إضافة منتج جديد</label><br>
+    <label for="name">اسم المنتج:</label>
+    <input type="text" name="name" required><br>
+    <label for="description">وصف المنتج:</label>
+    <textarea name="description" required></textarea><br>
+    <label for="price">السعر:</label>
+    <input type="number" name="price" step="0.01" required><br>
+    <label for="image">صورة المنتج:</label>
+    <input type="file" name="image" required><br>
+    <button type="submit" style="background-color:rgb(211, 54, 23);">إضافة المنتج</button>
+</form>
+<h1 class="mon">المنتجات المضافة</h1>
+<div class="products-container">
+     <?php
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            echo '<div class="product">';
+            echo '<h2>' . $row['name'] . '</h2>';
+            echo '<p>' . $row['description'] . '</p>';
+            echo '<p>السعر: ' . $row['price'] . ' $</p>';
+            echo '<img src="data:image/jpeg;base64,' . base64_encode($row['image']) . '" alt="صورة المنتج">';
+            echo '<div class="buttons">';
+            echo '<a href="?delete=' . $row['id'] . '" onclick="return confirm(\'هل أنت متأكد من حذف هذا المنتج؟\')">';
+            echo '<button class="delete-btn">حذف</button>';
+            echo '</a>';
+            echo '<a href="edit.php?id=' . $row['id'] . '">';echo '<button class="edit-btn">تعديل</button>';
+            echo '</a>';
+            echo '</div>';
+            echo '</div>';
+        }
+    } else {
+        echo "<p class='no-products'>لا توجد منتجات مضافة</p>";
+    }
+    ?>
+</div>
+<a id="store-link" href="index.php">إنتقال إلى صفحة متجر الملابس الرياضية</a>
+
+</body>
+</html>
