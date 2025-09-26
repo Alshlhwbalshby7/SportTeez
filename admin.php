@@ -221,3 +221,10 @@ if (isset($_SESSION['username'])) {
             font-weight: bold;
             margin-top: 40px;
         }
+            .mon{background: linear-gradient(to right, #ff5733, #ffbd33);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: inline-block;}
