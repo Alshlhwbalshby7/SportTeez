@@ -211,3 +211,7 @@ if (isset($_SESSION['username'])) {
             text-decoration: none;
             transition: 0.3s;
         }
+
+          #store-link:hover {
+            background-color: rgb(17, 4, 102);
+        }
