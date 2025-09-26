@@ -270,3 +270,6 @@ if (isset($_SESSION['username'])) {
     ?>
 </div>
 <a id="store-link" href="index.php">إنتقال إلى صفحة متجر الملابس الرياضية</a>
+
+</body>
+</html>
