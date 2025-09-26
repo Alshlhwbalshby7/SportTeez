@@ -228,3 +228,5 @@ if (isset($_SESSION['username'])) {
             border-radius: 10px;
             margin-bottom: 20px;
             display: inline-block;}
+              </style>
+</head>
