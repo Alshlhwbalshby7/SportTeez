@@ -230,3 +230,4 @@ if (isset($_SESSION['username'])) {
             display: inline-block;}
               </style>
 </head>
+<body>
