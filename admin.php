@@ -171,3 +171,7 @@ if (isset($_SESSION['username'])) {
             text-align: center;
             display: inline-block;
         }
+          .login-btn {
+            background: linear-gradient(to right, #4CAF50, #008CBA);
+            color: white;
+        }
