@@ -245,3 +245,4 @@ if (isset($_SESSION['username'])) {
     <input type="file" name="image" required><br>
     <button type="submit" style="background-color:rgb(211, 54, 23);">إضافة المنتج</button>
 </form>
+<h1 class="mon">المنتجات المضافة</h1>
