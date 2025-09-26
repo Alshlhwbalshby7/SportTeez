@@ -182,3 +182,11 @@ if (isset($_SESSION['username'])) {
          .btn:hover {
             opacity: 0.8;
         }
+         .admin-title {
+            background: linear-gradient(to right, #ff5733, #ffbd33);
+            color: white;
+            padding: 15px;
+            font-size: 26px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
