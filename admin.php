@@ -179,3 +179,6 @@ if (isset($_SESSION['username'])) {
             background: linear-gradient(to right, #ff4d4d, #cc0000);
             color: white;
         }
+         .btn:hover {
+            opacity: 0.8;
+        }
