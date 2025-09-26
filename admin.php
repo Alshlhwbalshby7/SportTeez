@@ -190,3 +190,13 @@ if (isset($_SESSION['username'])) {
             border-radius: 10px;
             margin-bottom: 20px;
         }
+
+         .header {
+            background: linear-gradient(to right, #4CAF50, #008CBA);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
