@@ -160,3 +160,14 @@ if (isset($_SESSION['username'])) {
             font-weight: bold;
             color: #333;
         }
+         .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+            text-align: center;
+            display: inline-block;
+        }
